@@ -1,0 +1,32 @@
+#wrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 33vh 33vh 1fr;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-areas:
+    'hd hd hd'
+    'dv1 dv1 dv1'
+    'dv2 dv2 dv2'
+    'ft ft ft' 
+    ;
+}
+header{
+    grid-area: hd;
+    background-color: green;
+}
+#flexbox1{
+    grid-area: dv1;
+    display: flex;
+}
+#flexbox2{
+    grid-area: dv2;
+    display: flex;
+}
+section{
+    grid-area: sc;
+    background-color: blue;
+}
+footer{
+    grid-area: ft;
+    background-color: black;
+}
