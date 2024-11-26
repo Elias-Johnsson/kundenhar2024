@@ -1,14 +1,20 @@
 #wrapper{
     display: grid;
+    margin: 2px;
     height: 100vh;
     grid-template-columns: 33vh 33vh 1fr;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-rows: 5vh 35vh 30vh 30vh 10vh;
     grid-template-areas:
+    'nv nv nv'
     'hd hd hd'
     'dv1 dv1 dv1'
     'dv2 dv2 dv2'
     'ft ft ft' 
     ;
+}
+nav{
+    grid-area: nv;
+    background-color: aquamarine;
 }
 header{
     grid-area: hd;
@@ -17,14 +23,18 @@ header{
 #flexbox1{
     grid-area: dv1;
     display: flex;
+    justify-content: space-evenly;
 }
 #flexbox2{
     grid-area: dv2;
     display: flex;
+    justify-content: space-evenly;
 }
 section{
     grid-area: sc;
+    margin: 2px;
     background-color: blue;
+    width: 100%;
 }
 footer{
     grid-area: ft;
