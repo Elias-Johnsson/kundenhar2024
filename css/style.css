@@ -1,9 +1,12 @@
+body{
+    background-color: #2ecc71;
+}
 #wrapper{
     display: grid;
     margin: 2px;
     height: 100vh;
     grid-template-columns: 33vh 33vh 1fr;
-    grid-template-rows: 5vh 35vh 30vh 30vh 10vh;
+    grid-template-rows: 10vh 60vh 30vh 30vh 10vh;
     grid-template-areas:
     'nv nv nv'
     'hd hd hd'
@@ -14,11 +17,32 @@
 }
 nav{
     grid-area: nv;
-    background-color: aquamarine;
+    display: flex;
+    background-color:#2ecc71;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+img{
+    height: 100%;
+}
+.link{
+    display: flex;
+    align-items: center;
 }
 header{
     grid-area: hd;
+    display: flex;
+    border-radius: 10px;
     background-color: green;
+    background-image: url(../img/headerphoto.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
 }
 #flexbox1{
     grid-area: dv1;
@@ -32,11 +56,12 @@ header{
 }
 section{
     grid-area: sc;
-    margin: 2px;
-    background-color: blue;
+    margin: 5px;
+    background-color: whitesmoke;
+    border-radius: 10px;
     width: 100%;
 }
 footer{
     grid-area: ft;
-    background-color: black;
+    background-color: #2ecc71;
 }
