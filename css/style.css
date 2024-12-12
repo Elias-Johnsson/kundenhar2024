@@ -1,12 +1,12 @@
 body{
-    background-color: #2ecc71;
+    background-color: #38925e;
 }
 #wrapper{
     display: grid;
     margin: 2px;
     height: 100vh;
     grid-template-columns: 33vh 33vh 1fr;
-    grid-template-rows: 10vh 60vh 30vh 30vh 10vh;
+    grid-template-rows: 15vh 60vh 30vh 30vh 5vh;
     grid-template-areas:
     'nv nv nv'
     'hd hd hd'
@@ -15,14 +15,59 @@ body{
     'ft ft ft' 
     ;
 }
+#wrapper2{
+    display: grid;
+    grid-template-columns:45% 45% 1fr;
+    grid-template-rows: 15vh 50vh 50vh 5vh;
+    grid-template-areas: 
+    'nv nv nv'
+    'mn mn mn'
+    'dv3 dv3 dv3'
+    'ft ft ft'
+    ;
+}
+#sc0{
+    height: 20%;
+}
+h1{
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    grid-area: mn;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#38925e;
+}
+#flexbox3{
+    display: flex;
+    grid-area: dv3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+aside{
+    border-radius: 10px;
+    background-color: white;
+}
+#pers1 #pers2 #pers3 #pers4{
+
+
+}
 nav{
     grid-area: nv;
     display: flex;
-    background-color:#2ecc71;
-    border-radius: 10px;
+    background-color:#38925e;
+    font-family: 'Agency FB', sans-serif;
     justify-content: space-evenly;
+    position:sticky;
+    top:0;
 }
-
 a{
     color: white;
     text-decoration: none;
@@ -35,7 +80,7 @@ img{
     align-items: center;
 }
 header{
-    grid-area: hd;
+    grid-area:hd;
     display: flex;
     border-radius: 10px;
     background-color: green;
@@ -54,14 +99,33 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
+h2{
+    font-family: 'Agency FB', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: #38925e;
+}
 section{
     grid-area: sc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 5px;
     background-color: whitesmoke;
     border-radius: 10px;
-    width: 100%;
+    justify-content: center;
+    align-items: top;
+    width: 50%;
+    padding: 5px;
+    padding-top: 0px;
 }
+article{
+    display: flex;
+    justify-content: center;
+}
+
 footer{
     grid-area: ft;
-    background-color: #2ecc71;
+    display: flex;
+    justify-content: center;
+    background-color: #38925e;
+    color: black;
+
 }
