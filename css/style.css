@@ -27,9 +27,12 @@ body{
     ;
 }
 #sc0{
-    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 h1{
+    color: white;
 
 }
 main{
@@ -48,16 +51,79 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: white;
 }
 aside{
     border-radius: 10px;
+    grid-area: as;
     background-color: white;
 }
-#pers1 #pers2 #pers3 #pers4{
-
-
+#pers1{
+    margin: 10px;
+    border-radius: 15px;
+    width: 15%;
+    border-style: solid;
+    border-color:#38925e;
+    height: 45vh;
+}
+#pers2{
+    margin: 10px;
+    border-radius: 15px;
+    width: 15%;
+    border-style: solid;
+    border-color:#38925e;
+    height: 45vh;
+}
+#pers3{
+    margin: 10px;
+    border-radius: 15px;
+    width: 15%;
+    border-style: solid;
+    border-color:#38925e;
+    height: 45vh;
+}
+#pers4{
+    margin: 10px;
+    border-radius: 15px;
+    width: 15%;
+    border-style: solid;
+    border-color:#38925e;
+    height: 45vh;
+}
+#pfpdiv1{
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #38925e;
+}
+#pfpdiv2{
+    height: 15vh;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #38925e;
+}
+#pfpdiv3{
+    height: 15vh;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #38925e;
+}
+#pfpdiv4{
+    height: 15vh;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #38925e;
+}
+.pfp{
+    border-style: solid;
+    border-color: white;
 }
 nav{
     grid-area: nv;
