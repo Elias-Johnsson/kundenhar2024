@@ -1,12 +1,12 @@
 body{
-    background-color: #38925e;
+    background-color: #01823E;
 }
 #wrapper{
     display: grid;
     margin: 2px;
     height: 100vh;
     grid-template-columns: 33vh 33vh 1fr;
-    grid-template-rows: 15vh 60vh 30vh 30vh 5vh;
+    grid-template-rows: 15vh 60vh 50vh 30vh 5vh;
     grid-template-areas:
     'nv nv nv'
     'hd hd hd'
@@ -18,13 +18,24 @@ body{
 #wrapper2{
     display: grid;
     grid-template-columns:45% 45% 1fr;
-    grid-template-rows: 15vh 50vh 50vh 5vh;
+    grid-template-rows: 15vh 50vh 60vh 60vh 5vh;
     grid-template-areas: 
     'nv nv nv'
     'mn mn mn'
     'dv3 dv3 dv3'
+    'dv4 dv4 dv4'
     'ft ft ft'
     ;
+}
+#wrapper3{
+    display: grid;
+    grid-template-columns: 33% 33% 1fr;
+    grid-template-rows: 15vh 25vh 50vh 5vh;
+    grid-template-areas: 
+    'nv nv nv'
+    'hd2 hd2 hd2'
+    'mn2 mn2 mn2'
+    'ft ft ft';
 }
 #sc0{
     display: flex;
@@ -33,7 +44,18 @@ body{
 }
 h1{
     color: white;
+    font-family: 'Agency FB', sans-serif;
+    padding: 10px;
 
+}
+#main2{
+    grid-area: mn2;
+}
+#header2{
+    grid-area: hd2;
+    display: flex;
+    justify-content: center;
+    
 }
 main{
     display: flex;
@@ -43,83 +65,83 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color:#38925e;
+    background-color:#01823E;
 }
 #flexbox3{
     display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-direction: column;
     grid-area: dv3;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: white;
 }
-aside{
-    border-radius: 10px;
-    grid-area: as;
+#flexbox4{
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    grid-area: dv4;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-color: white;
 }
-#pers1{
-    margin: 10px;
+.personal{
+    margin-right: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     border-radius: 15px;
-    width: 15%;
+    width: 60vh;
     border-style: solid;
-    border-color:#38925e;
-    height: 45vh;
+    border-color:#01823E;
+    height: 55vh;
 }
-#pers2{
-    margin: 10px;
-    border-radius: 15px;
-    width: 15%;
-    border-style: solid;
-    border-color:#38925e;
-    height: 45vh;
-}
-#pers3{
-    margin: 10px;
-    border-radius: 15px;
-    width: 15%;
-    border-style: solid;
-    border-color:#38925e;
-    height: 45vh;
-}
-#pers4{
-    margin: 10px;
-    border-radius: 15px;
-    width: 15%;
-    border-style: solid;
-    border-color:#38925e;
-    height: 45vh;
-}
+
 #pfpdiv1{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 15vh;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: #38925e;
+    background-color: #01823E;
 }
 #pfpdiv2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 15vh;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: #38925e;
+    background-color: #01823E;
 }
 #pfpdiv3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 15vh;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: #38925e;
+    background-color:#01823E
 }
 #pfpdiv4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 15vh;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: #38925e;
+    background-color: #01823E;
 }
 .pfp{
     border-style: solid;
@@ -128,7 +150,7 @@ aside{
 nav{
     grid-area: nv;
     display: flex;
-    background-color:#38925e;
+    background-color:#01823E;
     font-family: 'Agency FB', sans-serif;
     justify-content: space-evenly;
     position:sticky;
@@ -141,21 +163,28 @@ a{
 img{
     height: 100%;
 }
+.pfp1{
+    height: 80%;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: #2ecc71;
+}
 .link{
     display: flex;
     align-items: center;
 }
-header{
+#Header1{
     grid-area:hd;
     display: flex;
     border-radius: 10px;
-    background-color: green;
+    background-color: 01823E ;
     background-image: url(../img/headerphoto.jpg);
     background-position: center;
     background-size: cover;
     align-items: center;
 }
 #flexbox1{
+    margin-top: 50px;
     grid-area: dv1;
     display: flex;
     justify-content: space-evenly;
@@ -168,7 +197,7 @@ header{
 h2{
     font-family: 'Agency FB', sans-serif;
     text-decoration: underline;
-    text-decoration-color: #38925e;
+    text-decoration-color: #01823E ;
 }
 section{
     grid-area: sc;
@@ -191,7 +220,7 @@ footer{
     grid-area: ft;
     display: flex;
     justify-content: center;
-    background-color: #38925e;
+    background-color: #01823E ;
     color: black;
 
 }
