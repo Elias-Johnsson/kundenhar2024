@@ -5,8 +5,8 @@ body{
     display: grid;
     margin: 2px;
     height: 100vh;
-    grid-template-columns: 33vh 33vh 1fr;
-    grid-template-rows: 15vh 60vh 50vh 30vh 5vh;
+    grid-template-columns: 33% 33% 1fr;
+    grid-template-rows: 15vh 60vh 30vh 25vh 5vh;
     grid-template-areas:
     'nv nv nv'
     'hd hd hd'
@@ -29,12 +29,12 @@ body{
 }
 #wrapper3{
     display: grid;
-    grid-template-columns: 33% 33% 1fr;
-    grid-template-rows: 15vh 25vh 50vh 5vh;
+    grid-template-columns: 20% 33% 1fr;
+    grid-template-rows: 15vh 25vh 51vh 10vh;
     grid-template-areas: 
     'nv nv nv'
-    'hd2 hd2 hd2'
-    'mn2 mn2 mn2'
+    'as hd2 hd2'
+    'as ardiv ardiv'
     'ft ft ft';
 }
 #sc0{
@@ -42,11 +42,90 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+#article_div{
+    grid-area: ardiv;
+}
 h1{
     color: white;
     font-family: 'Agency FB', sans-serif;
     padding: 10px;
 
+}
+.article_head{
+    color: black;
+}
+#a1{
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:white;
+    color: transparent;
+    margin: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-style: solid;
+    border-color: #2ecc71;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#a1:hover{
+    transition-duration: 0.5s;
+    transition-delay: 0.25s;
+    height: 20vh;
+    color: black;
+}
+#a2{
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    color: transparent;
+    background-color: white;
+    margin: 2px;
+    border-style: solid;
+    border-color: #2ecc71;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#a2:hover{
+    transition-duration: 0.5s;
+    transition-delay: 0.25s;
+    height: 20vh;
+    color: black;
+}
+#a3{
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 2px;
+    color: transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+    border-color: #2ecc71;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#a3:hover{
+    transition-duration: 0.5s;
+    transition-delay: 0.25s;
+    height: 20vh;
+    color: black;
+}
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    align-items: center;
+    background-color: white;
+    height: 77vh;
+    border-radius: 10px;
+    border-width: 5px;
+    font-family: 'Agency FB', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 #main2{
     grid-area: mn2;
@@ -54,6 +133,7 @@ h1{
 #header2{
     grid-area: hd2;
     display: flex;
+    padding-top: 40px;
     justify-content: center;
     
 }
@@ -101,6 +181,7 @@ main{
     border-style: solid;
     border-color:#01823E;
     height: 55vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #pfpdiv1{
@@ -155,6 +236,7 @@ nav{
     justify-content: space-evenly;
     position:sticky;
     top:0;
+    width: 100%;
 }
 a{
     color: white;
@@ -177,7 +259,7 @@ img{
     grid-area:hd;
     display: flex;
     border-radius: 10px;
-    background-color: 01823E ;
+    background-color: #01823E ;
     background-image: url(../img/headerphoto.jpg);
     background-position: center;
     background-size: cover;
@@ -206,10 +288,12 @@ section{
     background-color: whitesmoke;
     border-radius: 10px;
     justify-content: center;
-    align-items: top;
     width: 50%;
     padding: 5px;
-    padding-top: 0px;
+}
+section:hover{
+    transform: scale(1.03);
+    transition: all 0.5s ease;
 }
 article{
     display: flex;
@@ -218,9 +302,10 @@ article{
 
 footer{
     grid-area: ft;
+    margin-top: 10px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     background-color: #01823E ;
-    color: black;
+    color: white;
 
 }
