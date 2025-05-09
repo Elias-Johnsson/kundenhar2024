@@ -147,6 +147,17 @@ main{
     flex-wrap: wrap;
     background-color:#01823E;
 }
+#flexbox1{
+    margin-top: 50px;
+    grid-area: dv1;
+    display: flex;
+    justify-content: space-evenly;
+}
+#flexbox2{
+    grid-area: dv2;
+    display: flex;
+    justify-content: space-evenly;
+}
 #flexbox3{
     display: flex;
     border-top-left-radius: 10px;
@@ -264,17 +275,6 @@ img{
     background-position: center;
     background-size: cover;
     align-items: center;
-}
-#flexbox1{
-    margin-top: 50px;
-    grid-area: dv1;
-    display: flex;
-    justify-content: space-evenly;
-}
-#flexbox2{
-    grid-area: dv2;
-    display: flex;
-    justify-content: space-evenly;
 }
 h2{
     font-family: 'Agency FB', sans-serif;
